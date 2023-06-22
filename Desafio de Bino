@@ -22,11 +22,11 @@ print(tres, 'MULTIPLO(S) DE 3')
 print(quatro, 'MULTIPLO(S) DE 4')
 print(cinco, 'MULTIPLO(S) DE 5')
 
-#basicamente, o raciocinio dessa questão é simples, precisamos da quantidade de numeros
-#das lista de Bino, e as variaveis vão representar cada numero que temos que verificar se
-#é multiplo. no for a gnt vai repetir a mesma quantidade de vezes que a quantidade de
-#numeros que tem na lista. Vamos pedir os numeros e verificar a partir do resto da divisão pelo
-#multiplo, se o resultado for 0 add 1 na variavel correspondente, depois de passa por cada
+#Basicamente, o raciocinio dessa questão é simples, precisamos da quantidade de números
+#das lista de Bino, e as variaveis vão representar cada número que temos que verificar se
+#é multiplo. No "for" vai repetir a mesma quantidade de vezes que a quantidade de
+#numeros que tem na lista. Vamos pedir os numeros da lista(2,5,4,20,10) e verificar a partir do resto da divisão pelo
+#multiplo. Se o resultado for 0 adiciona 1 na variavel correspondente, depois de passar por cada
 #numero printamos os resultados.
-#Um detalhe importante (que eu corrigi no erro) é só usar if, se não ele não passa pelos outros,
+#Um detalhe importante (que eu corrigi no erro) é só usar "if", se não ele não passa pelos outros,
 #ele acha um correspondente e ja para, mas precisamos passar por todos.
