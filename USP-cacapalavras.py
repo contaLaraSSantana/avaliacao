@@ -62,4 +62,4 @@ for n in range(PalavraN):
 # matriz e ir procurando linha pro linha das palavras exemplificadas. SE achar isola a posição
 # tipo x e y (como eu faço isso eu ja não sei) e eu teria que fazer a comparação.
 # o problema é para criar as letras de acordo com a escolha do jogador. Eu não sei como
-#criar essas letras aletóriamente.
+#criar essas letras aletoriamente.
