@@ -1,0 +1,143 @@
+# Aluno: Lara de S.Santana - Questão: "Corvo contador"
+
+#INFORMAÇÕES IMPORTANTES:
+
+# corvo pisca diversas vezes e grita apenas 3 vezeS
+# Um olho aberto significa 1 e um olho fechado significa 0
+# A cada piscada, este número deve ser somado, e quando o corvo grita, essa soma é um resultado
+# A entrada descreve, em cada linha, em sequência, ou um grito ou uma piscada do corvo.
+# Um grito é representado pela string caw caw
+# Uma piscada é representada por três caracteres
+# um olho aberto: *
+# um olho aberto: -
+# Os números sorteados na loteria não excedem 1000.
+# A saída são três linhas, cada linha com um número da loteria
+
+#Pra descobrir qual o número da loteria através do sono a partir dessas informações eu primeiro pedi quantos números aparecem antes do primeiro grito
+# Depois disso eu precisei da conversão dos números binários(fui seguindo uma tabela no google) e criei 3 variaveis, uma para cada "grito"
+#criei um laço de repetição que verificava o número digitado e fazia a soma. 
+
+qnt = int(input('Quantos números ele diz antes do primeiro grito: '))
+um = 0
+dois = 0
+tres = 0
+
+for n in range(qnt):
+    N = (input('Digite o numero em binário:'))
+
+    if N == "---":
+        um += 0
+        print("Um dos números é 0")
+    if N == "--*":
+        um += 1
+        print("Um dos números é 1")
+    if N == "-*-":
+        um += 2
+        print("Um dos números é 2")
+    if N == "-**":
+        um += 3
+        print("Um dos números é 3")
+    if N == "*--":
+        um += 4
+        print("Um dos números é 4")
+    if N == "*-*":
+        um += 5
+        print("Um dos números é 5")
+    if N == "**-":
+        um += 6
+        print("Um dos números é 6")
+    if N == "***":
+        um += 7
+        print("Um dos números é 7")
+    if N == "*---":
+        um += 8
+        print("Um dos números é 8")
+    if N == "*--*":
+        um += 9
+        print("Um dos números é 9")
+    if N == "*-*-":
+        um += 10
+        print("Um dos números é 10")
+
+print("Um dos resultados da loteria é ", um)
+print("caw caw")
+
+for n in range(qnt):
+    N = (input('Digite o numero em binário:'))
+
+    if N == "---":
+        dois += 0
+        print("Um dos números é 0")
+    if N == "--*":
+        dois += 1
+        print("Um dos números é 1")
+    if N == "-*-":
+        dois += 2
+        print("Um dos números é 2")
+    if N == "_**":
+        dois += 3
+        print("Um dos números é 3")
+    if N == "*--":
+        dois += 4
+        print("Um dos números é 4")
+    if N == "*-*":
+        dois += 5
+        print("Um dos números é 5")
+    if N == "**-":
+        dois += 6
+        print("Um dos números é 6")
+    if N == "***":
+        dois += 7
+        print("Um dos números é 7")
+    if N == "*---":
+        dois += 8
+        print("Um dos números é 8")
+    if N == "*--*":
+        dois += 9
+        print("Um dos números é 9")
+    if N == "*-*-":
+        dois += 10
+        print("Um dos números é 10")
+
+print("Um dos resultados da loteria é ", dois)
+print("caw caw")
+
+for n in range(qnt):
+    N = (input('Digite o numero em binário:'))
+
+    if N == "---":
+        tres += 0
+        print("Um dos números é 0")
+    if N == "--*":
+        tres += 1
+        print("Um dos números é 1")
+    if N == "-*-":
+        tres += 2
+        print("Um dos números é 2")
+    if N == "-**":
+        tres += 3
+        print("Um dos números é 3")
+    if N == "*--":
+        tres += 4
+        print("Um dos números é 4")
+    if N == "*-*":
+        tres += 5
+        print("Um dos números é 5")
+    if N == "**-":
+        tres += 6
+        print("Um dos números é 6")
+    if N == "***":
+        tres += 7
+        print("Um dos números é 7")
+    if N == "*---":
+        tres += 8
+        print("Um dos números é 8")
+    if N == "*--*":
+        tres += 9
+        print("Um dos números é 9")
+    if N == "*-*-":
+        tres += 10
+        print("Um dos números é 10")
+print("caw caw")
+print("Um dos resultados da loteria é ", tres)
+print("Os tres numeros são:",um,"",dois,"", tres)
